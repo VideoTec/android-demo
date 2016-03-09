@@ -1,0 +1,22 @@
+From: <sip:+8616000029119@feinno.com>
+To: <sip:+8615901435217@feinno.com>
+DateTime: 2015-02-15T00:29:28+08:00
+NS: imdn <urn:ietf:params:imdn>
+imdn.Message-ID: Z5mMSmm7
+
+Content-type: message/imdn+xml
+Content-Disposition: notification
+Content-Length: 439
+
+<?xml version="1.0" encoding="UTF-8"?>
+<imdn xmlns="urn:ietf:params:xml:ns:imdn">  
+  <datetime>2015-02-15T00:29:28+08:00</datetime>  
+  <delivery-notification> 
+    <status> 
+      <delivered/> 
+    </status> 
+  </delivery-notification>  
+  <message-id>1423931367306</message-id>  
+  <original-recipient-uri>sip:+8615901435217@feinno.com</original-recipient-uri>  
+  <recipient-uri>sip:+8615901435217@feinno.com</recipient-uri> 
+</imdn>

@@ -1,0 +1,20 @@
+SIP/2.0 200 OK
+Contact: <sip:feinno.com>;+sip.instance="<urn:gsma:imei:MYIMEI>";+g.3gpp.iari-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel";video;expires=3600
+CSeq: 1000 OPTION
+From: <sip:+8615653596877@feinno.com>;tag=CI_xrDd0
+Route: <sip:ucscf@182.92.189.126:5070;transport=tcp;lr>
+To: <sip:+8615653596877@feinno.com>;tag=CI_xrDd0;x-zte-agentinfo=""
+Call-ID: c721270b-638e-4a67-ca91-7fc344ab0cf8
+Via: SIP/2.0/TCP 182.92.189.126:5070;branch=z9hG4bK84217042,SIP/2.0/TCP 182.92.189.126:5070;branch=z9hG4bK21d207ca;rport=57129,SIP/2.0/TCP ap.rongtalk.com;branch=z9hG4bKWr8y_WXB;received=60.194.14.249;rport=42389
+Content-Length: 0
+Content-Type: multipart/related; type="application/sdp"; boundary="boundary71"
+
+SIP/2.0 200 OK
+Contact: <sip:feinno.com>;+sip.instance="<urn:gsma:imei:MYIMEI>";+g.3gpp.iari-ref="urn%3Aurn-7%3A3gpp-service.ims.icsi.mmtel";video;expires=3600
+CSeq: 1000 OPTION
+From: <sip:+8615653596877@feinno.com>;tag=CI_xrDd0
+Route: <sip:ucscf@182.92.189.126:5070;transport=tcp;lr>
+To: <sip:+8615653596877@feinno.com>
+Call-ID: c721270b-638e-4a67-ca91-7fc344ab0cf8
+Via: SIP/2.0/TCP 182.92.189.126:5070;branch=z9hG4bK84217042,SIP/2.0/TCP 182.92.189.126:5070;branch=z9hG4bK21d207ca;rport=57129,SIP/2.0/TCP ap.rongtalk.com;branch=z9hG4bKWr8y_WXB;received=60.194.14.249;rport=42389
+Content-Length: 0

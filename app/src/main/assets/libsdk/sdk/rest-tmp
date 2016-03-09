@@ -1,0 +1,11 @@
+GET https://config.rcs.chinamobile.com/?vers=0&client_vendor=coolpad&client_version=rcs3.0&terminal_vendor=coolpad&terminal_mode=8730&terminal_sw_version=3.3.3&IMSI=460023115053722&IMEI=352136064734219
+Host: config.rcs.chinamobile.com
+x-up-calling-line-id: +8615011581854
+x-wsb-identity: 460023115053722
+Cookie: PHPSESSID=A83014AA18BB2ABEEB0A1FEF96955B43E27B380D96A1A37A04EB30338371610F24B92309EC7B240A1E5E502CE1C8863EE29E8A226F2911C12EEC4A7A0E787D8A
+#
+GET http://config.rcs.chinamobile.com/?vers=0&client_vendor=coolpad&client_version=rcs3.0&terminal_vendor=coolpad&terminal_mode=8730&terminal_sw_version=3.3.3&IMSI=460023115053722&IMEI=352136064734219
+Host: config.rcs.chinamobile.com
+x-up-calling-line-id: +8615011581854
+x-wsb-identity: 460023115053722
+
