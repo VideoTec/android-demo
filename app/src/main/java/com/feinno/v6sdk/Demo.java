@@ -1,9 +1,9 @@
-package com.feinno.jni;
+package com.feinno.v6sdk;
 
 /**
  * Created by wangxiangfx on 2016/3/11.
  */
-public class V6SDKDemo {
+public class Demo {
     static {
         System.loadLibrary("sdk");
     }

@@ -3,14 +3,12 @@ package com.example.wangxiangfx.demo;
 import android.app.ActivityManager;
 import android.app.Application;
 import android.content.Context;
-import android.provider.Settings;
-import android.telephony.TelephonyManager;
 import android.util.Log;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTest;
 
-import com.feinno.jni.V6SDKDemo;
+import com.feinno.v6sdk.Demo;
 import com.feinno.sdk.dapi.RCSManager;
 
 /**
@@ -20,7 +18,7 @@ public class DemoApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        V6SDKDemo.test("test v6sdk demo");
+        Demo.test("test v6sdk demo");
         String processName = getCurProcessName(android.os.Process.myPid());
         Log.d("DemoApplication", processName);
         if ("com.feinno.rongfly".equals(processName)) {

@@ -68,7 +68,7 @@
             </intent-filter>
         </receiver>
 
-        <service
+        <!--<service
             android:name="com.cmcc.sso.service.SsoService"
             android:exported="true"
             android:process="com.cmcc.sso.service.SsoService">
@@ -81,7 +81,7 @@
             <meta-data
                 android:name="service_version"
                 android:value="2.2.0-jar.arm"/>
-        </service>
+        </service>-->
         <service
             android:name="com.feinno.sdk.dapi.RCSWorkingService"
             android:exported="false"
