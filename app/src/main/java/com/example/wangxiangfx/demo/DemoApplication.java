@@ -10,6 +10,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTest;
 
+import com.feinno.jni.V6SDKDemo;
 import com.feinno.sdk.dapi.RCSManager;
 
 /**
@@ -19,6 +20,7 @@ public class DemoApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        V6SDKDemo.test("test v6sdk demo");
         String processName = getCurProcessName(android.os.Process.myPid());
         Log.d("DemoApplication", processName);
         if ("com.feinno.rongfly".equals(processName)) {
