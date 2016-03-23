@@ -10,6 +10,7 @@ import org.json.JSONTest;
 
 import com.feinno.v6sdk.Demo;
 import com.feinno.sdk.dapi.RCSManager;
+import com.feinno.v6sdk.test.TXTest;
 
 /**
  * Created by wangxiangfx on 2016/1/25.
@@ -18,7 +19,8 @@ public class DemoApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Demo.test("test v6sdk demo");
+        //Demo.test("test v6sdk demo");
+        TXTest.Test();
         String processName = getCurProcessName(android.os.Process.myPid());
         Log.d("DemoApplication", processName);
         if ("com.feinno.rongfly".equals(processName)) {
