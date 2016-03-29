@@ -1,10 +1,20 @@
 package com.example.wangxiangfx.demo;
 
 import android.app.ActionBar;
+import android.content.ContentProvider;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.os.Bundle;
+import android.os.SystemClock;
+import android.provider.CallLog;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
@@ -14,12 +24,13 @@ import com.cmcc.sso.sdk.auth.AuthnConstants;
 import com.cmcc.sso.sdk.auth.AuthnHelper;
 import com.cmcc.sso.sdk.auth.TokenListener;
 import com.cmcc.sso.sdk.util.SsoSdkConstants;
+import com.feinno.rongfly.core.modules.calllog.CallItems;
 import com.feinno.sdk.dapi.LoginManager;
 import com.feinno.sdk.dapi.RCSManager;
 
 import org.json.JSONObject;
 
-public class DemoACT extends AppCompatActivity {
+public class DemoACT extends AppCompatActivity implements ActivityCompat.OnRequestPermissionsResultCallback {
     private final static String TAG = DemoACT.class.getSimpleName();
     private EditText mRemoteIP;
     private Context mContext;
@@ -74,8 +85,12 @@ public class DemoACT extends AppCompatActivity {
             }
         });
     }
+
+    public static CallItems sCallItems = new CallItems();
     public void onTest(View v) {
-        startActivity(new Intent(this, VoIPUI.class));
+        //startActivity(new Intent(this, VoIPUI.class));
+        sCallItems.getCallLogFromSys(this);
+        startActivity(new Intent(this, CallLogAct.class));
     }
 
     String mOwner;
@@ -113,5 +128,9 @@ public class DemoACT extends AppCompatActivity {
                         }
                     }
                 });
+    }
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+
     }
 }

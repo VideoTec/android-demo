@@ -20,7 +20,7 @@ public class DemoApplication extends Application {
     public void onCreate() {
         super.onCreate();
         //Demo.test("test v6sdk demo");
-        TXTest.Test();
+        //TXTest.Test();
         String processName = getCurProcessName(android.os.Process.myPid());
         Log.d("DemoApplication", processName);
         if ("com.feinno.rongfly".equals(processName)) {

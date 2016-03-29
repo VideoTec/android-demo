@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <!-- 查看网络状态 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.CAMERA"/>
     <!-- 录音 -->
@@ -25,6 +26,8 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
 
     <application
         android:name=".DemoApplication"
@@ -68,7 +71,8 @@
             </intent-filter>
         </receiver>
 
-        <!--<service
+        <!--
+        <service
             android:name="com.cmcc.sso.service.SsoService"
             android:exported="true"
             android:process="com.cmcc.sso.service.SsoService">
@@ -81,7 +85,8 @@
             <meta-data
                 android:name="service_version"
                 android:value="2.2.0-jar.arm"/>
-        </service>-->
+        </service>
+        -->
         <service
             android:name="com.feinno.sdk.dapi.RCSWorkingService"
             android:exported="false"
@@ -99,8 +104,11 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".VoIPUI"
+        <activity
+            android:name=".VoIPUI"
             android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".CallLogAct">
         </activity>
     </application>
 
