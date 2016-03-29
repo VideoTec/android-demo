@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.feinno.rongfly.core.modules.calllog.CallItem;
 import com.feinno.rongfly.core.modules.calllog.CallItems;
+import com.feinno.rongfly.core.modules.calllog.CombineRecord;
 
 public class CallLogListItemAdapter extends BaseAdapter {
 
@@ -32,7 +33,7 @@ public class CallLogListItemAdapter extends BaseAdapter {
     }
 
     @Override
-    public CallItems.CombineRecord getItem(int position) {
+    public CombineRecord getItem(int position) {
         return mCallItems.getItem(position, true);
     }
 
@@ -51,7 +52,7 @@ public class CallLogListItemAdapter extends BaseAdapter {
         return convertView;
     }
 
-    private void initializeViews(CallItems.CombineRecord record, ViewHolder holder) {
+    private void initializeViews(CombineRecord record, ViewHolder holder) {
         CallItem item = record.getCallItems().get(0);
         String number = item.getDay() + " - Missed:" + item.isMissed() + " - " + item.getNumber();
         number += " (" + record.getCallItems().size() + ")";
