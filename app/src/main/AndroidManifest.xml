@@ -108,7 +108,9 @@
             android:name=".VoIPUI"
             android:launchMode="singleTask">
         </activity>
-        <activity android:name=".CallLogAct">
+        <activity
+            android:name=".CallLogAct"
+            android:launchMode="singleTask">
         </activity>
     </application>
 
